@@ -1,8 +1,4 @@
 #include "main.h"
-#include <stdio.h>
-#include <stdarg.h>
-#include <limits.h>
-#include <unistd.h>
 /**
  * _printf - produces output according to a format
  * @format: string containing the specifier and the text to prin
@@ -74,13 +70,13 @@ int _printf(const char *format, ...)
 			}
 			else if (format[i] == '%')
 			{
-				putchar('%');
+				_putchar('%');
 				total++;
 			}
 		}
 		else
 		{
-			putchar(format[i]);
+			_putchar(format[i]);
 			total++;
 		}
 		if (buffer_i == 1024 || format[i] == '%')

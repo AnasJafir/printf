@@ -1,5 +1,4 @@
 #include "main.h"
-#include <stdio.h>
 /**
  * print_np_string - produces output to string format with non printable chars
  * @str: string input
@@ -14,15 +13,15 @@ int print_np_string(char *str)
 	{
 		if (str[i] < 32 || str[i] >= 127)
 		{
-			putchar('\\');
-			putchar('x');
-			putchar('0');
+			_putchar('\\');
+			_putchar('x');
+			_putchar('0');
 			print_hexadecimal(str[i], 'X');
 			len += 4;
 		}
 		else
 		{
-			putchar(str[i]);
+			_putchar(str[i]);
 			len++;
 		}
 	}

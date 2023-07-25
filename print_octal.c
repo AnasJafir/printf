@@ -1,5 +1,4 @@
-#include <stdio.h>
-#include <limits.h>
+#include "main.h"
 /**
  * print_octal - produces output to the octal format
  * @num: integer input to be converted
@@ -14,7 +13,7 @@ int print_octal(unsigned int num)
 
 	if (num == 0)
 	{
-		putchar('0');
+		_putchar('0');
 		return (1);
 	}
 	while (num != 0)
@@ -27,7 +26,7 @@ int print_octal(unsigned int num)
 	}
 	while (count > 0)
 	{
-		putchar('0' + digit[count - 1]);
+		_putchar('0' + digit[count - 1]);
 		count--;
 	}
 	return (total);

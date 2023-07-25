@@ -2,6 +2,10 @@
 #define MAIN_H
 
 #include <limits.h>
+#include <stdio.h>
+#include <stdarg.h>
+#include <limits.h>
+#include <unistd.h>
 
 #define BINARY_FORMAT "%b"
 
@@ -41,6 +45,7 @@ typedef struct converters
 	char type;
 } hp;
 
+int _putchar(char c);
 int print_string(char *str);
 int print_char(char c);
 int print_int(int num);

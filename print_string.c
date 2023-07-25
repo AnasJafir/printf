@@ -1,4 +1,4 @@
-#include <stdio.h>
+#include "main.h"
 /**
  * print_string - produces output to the string format
  * @str: string output
@@ -10,7 +10,7 @@ int print_string(char *str)
 
 	for (i = 0; str[i] != 0; i++)
 	{
-		putchar(str[i]);
+		_putchar(str[i]);
 		len++;
 	}
 	return (len);

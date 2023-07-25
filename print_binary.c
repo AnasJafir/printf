@@ -1,4 +1,4 @@
-#include <stdio.h>
+#include "main.h"
 /**
  * print_binary - produces output to the binary format
  * @num : integer input
@@ -13,7 +13,7 @@ int print_binary(unsigned int num)
 
 	if (num == 0)
 	{
-		putchar('0');
+		_putchar('0');
 		return (1);
 		total++;
 	}
@@ -27,7 +27,7 @@ int print_binary(unsigned int num)
 	}
 	while (count > 0)
 	{
-		putchar('0' + digit[count - 1]);
+		_putchar('0' + digit[count - 1]);
 		count--;
 	}
 	return (total);

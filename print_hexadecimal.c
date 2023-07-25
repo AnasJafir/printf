@@ -1,4 +1,4 @@
-#include <stdio.h>
+#include "main.h"
 /**
  * print_hexadecimal - produces output to the hexadecimal format
  * @num: integer input to be converted
@@ -14,7 +14,7 @@ int print_hexadecimal(unsigned int num, char hex_case)
 
 	if (num == 0)
 	{
-		putchar('0');
+		_putchar('0');
 		return (1);
 	}
 	while (num != 0)
@@ -36,7 +36,7 @@ int print_hexadecimal(unsigned int num, char hex_case)
 	}
 	while (count > 0)
 	{
-		putchar(digit[count - 1]);
+		_putchar(digit[count - 1]);
 		count--;
 	}
 	return (total);
